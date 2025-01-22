@@ -1,5 +1,4 @@
-[
-    {
+{
         "progile":{
             "name":"Kristin Watson",
             "message":"Good Morning",
@@ -8,22 +7,22 @@
         "unread-message":[
             {
                 "name":"Theresa Webb",
-                "message-count":"2",
+                "message-count":2,
                 "image":"/assets/png/image1.png"
             },
             {
                 "name":"Marvin McKinney",
-                "message-count":"1",
+                "message-count":1,
                 "image":"/assets/png/image2.png"
             },
             {
                 "name":"Jenny Holmes",
-                "message-count":"null",
+                "message-count":null,
                 "image":"/assets/png/image3.png"
             },
             {
                 "name":"Miranda Harding",
-                "message-count":"null",
+                "message-count":null,
                 "image":"/assets/png/image4.png"
             }
         ],
@@ -71,5 +70,4 @@
                 "icon-image":"/assets/svg/profile.svg"
             }
         ]
-    }
-]
+}
