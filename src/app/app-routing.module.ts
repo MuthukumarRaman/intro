@@ -1,11 +1,12 @@
 import { Routes,RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { SplashScreenComponent } from './components/splash-screen/splash-screen.component'
-import { HomeScreenComponent } from './components/home-screen/home-screen.component';
-
+import { LandingPageComponent } from './components/authorization/landing-page/landing-page.component'
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { LoginComponent } from './components/authorization/login/login.component'
 export const routes: Routes = [
-  { path: '', component: SplashScreenComponent },  
-  { path: 'home', component:HomeScreenComponent}
+  { path: '', component: LandingPageComponent },  
+  { path: 'home', component:DashboardComponent},
+  { path: 'login', component:LoginComponent}
 ];
 
 @NgModule({
