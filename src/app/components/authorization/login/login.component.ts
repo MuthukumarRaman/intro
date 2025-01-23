@@ -1,9 +1,10 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DataService } from '../../../services/data.service';
 import { Subscription } from 'rxjs';
+import { SharedModule } from '../../../imports'
 @Component({
   selector: 'app-login',
-  standalone:false,
+  imports:[SharedModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })

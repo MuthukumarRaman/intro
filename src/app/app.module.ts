@@ -1,16 +1,17 @@
 // import { NgModule } from '@angular/core';
-// import { HttpClientModule } from '@angular/common/http';
 // import { BrowserModule } from '@angular/platform-browser';
 // import { LoginComponent } from './components/authorization/login/login.component';
 // import { RouterModule } from '@angular/router';
+// import { CommonModule } from '@angular/common';
+
 // @NgModule({
 //     declarations: [
 //         LoginComponent
 //       ],
 //       imports: [
 //         BrowserModule,
-//         HttpClientModule,
-//         RouterModule 
+//         RouterModule,
+//         CommonModule
 //       ],
 //       providers: [],
 // })
