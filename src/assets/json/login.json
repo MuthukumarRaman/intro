@@ -1,14 +1,12 @@
 {
-    "sign-in":{
-        "logo":"/assets/svg/login-logo.svg",
-        "message":"Let’s Get You Started With intro",
-        "accounts":[
-            {"image":"/assets/svg/google.svg","name":"Google"},
-            {"image":"/assets/svg/linkedin.svg","name":"Linked in"},
-            {"image":"/assets/svg/instagram.svg","name":"Instagram"},
-            {"image":"/assets/svg/facebook.svg","name":"Facebook"},
-            {"image":"/assets/svg/apple.svg","name":"Apple"}
-        ]
-
-    }
+    "logo":"/assets/svg/login-logo.svg",
+    "message":"Let’s Get You Started With intro",
+    "accounts":[
+        {"image":"/assets/svg/google.svg","name":"Google"},
+        {"image":"/assets/svg/linkedin.svg","name":"Linked in"},
+        {"image":"/assets/svg/instagram.svg","name":"Instagram"},
+        {"image":"/assets/svg/facebook.svg","name":"Facebook"},
+        {"image":"/assets/svg/apple.svg","name":"Apple"}
+    ],
+    "sign-btn":"Sign In Using Password"
 }

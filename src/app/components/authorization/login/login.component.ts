@@ -1,8 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DataService } from '../../../services/data.service';
 import { Subscription } from 'rxjs';
-import { map, tap } from 'rxjs/operators';
-import { firstValueFrom } from 'rxjs';
 @Component({
   selector: 'app-login',
   standalone:false,
@@ -10,7 +8,7 @@ import { firstValueFrom } from 'rxjs';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit, OnDestroy {
-  data: any[] = [];
+  public loginData: any;
   private subscription!: Subscription;
 
   constructor(private dataService: DataService) {}
@@ -21,17 +19,14 @@ export class LoginComponent implements OnInit, OnDestroy {
     //   tap(data => this.data = data)
     // ).subscribe();
     this.dataService.loadData()
-    console.log( this.dataService.data )
     this.loadData()
   }
 
    loadData(){
-
-
-
-this.dataService.data.subscribe((newData) => {
-  console.log(newData);
-})
+    this.dataService.data.subscribe((newData) => {
+   console.log(newData);
+   this.loginData = newData
+   })
   }
 
   ngOnDestroy() {
