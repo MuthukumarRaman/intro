@@ -10,11 +10,11 @@ export class DataService {
   data = this.dataSubject.asObservable();
 
   constructor(private http: HttpClient) {
-    this.loadData();
-    console.log("start")
+    // this.loadData();
+   
   }
 
-  private loadData() {
+   loadData() {
     this.http.get('/assets/json/login.json').subscribe(
       (response) => {
         this.dataSubject.next(response);
