@@ -1,0 +1,37 @@
+<div class="navbar">
+    <div class="top-container">
+    <div class="header-image">
+        <img src="/assets/svg/logo.svg" alt="">
+    </div>
+    <div class="nav-btns">
+            <button [class.active-button]="isActive('/home')" (click)="navigateTo('/home')">
+                <img [src]="getImageSrc('/home', 'home')" alt="Home">
+                <span>Home</span>
+            </button>
+            <button [class.active-button]="isActive('/explore')" (click)="navigateTo('/explore')">
+                <img [src]="getImageSrc('/explore', 'globe')" alt="Explore" >
+                <span>Explore</span>
+            </button>
+
+            <button [class.active-button]="isActive('/chat')" (click)="navigateTo('/chat')">
+                <img [src]="getImageSrc('/chat', 'chat')" alt="Chat" >
+                <span>Chat</span>
+            </button>
+            <button [class.active-button]="isActive('/profile')" (click)="navigateTo('/profile')">
+                <img [src]="getImageSrc('/profile', 'user')" alt="Profile" >
+                <span>Profile</span>
+            </button>
+    </div>
+    </div>
+    <div class="bottom-container">
+        <button>
+            <i class="fa-solid fa-gear"></i>
+            <span>Setting</span>
+        </button>
+        <button>
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Logout</span>
+        </button>
+
+    </div>
+</div>

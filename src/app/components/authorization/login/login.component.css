@@ -11,7 +11,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
+    width: 382px;
+    border:  1px solid #DADADA;
+    border-radius: 10px;
 }
 .login-container .login-header{
     display: flex;
@@ -41,13 +44,13 @@
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
-    width: auto;
+    width: 100%;
     height: auto;
     gap:13px;
 }
 .accounts button{
     all: unset;
-    width: 382px;
+    width: 100%;
     display: flex;
     padding: 10px 12px;
     gap:37px;
@@ -62,18 +65,20 @@
 }
 .accounts button span{
     font-size: 1em;
-    font-weight: 700;
+    font-weight: 500;
     text-align: center;
     letter-spacing: 0.2px;
     color:#59606E;
 }
 .sign-btn-container{
     margin-top: 30px;
-    
+    width: 100%;
+    display: grid;
+    place-items: center;
 }
 .sign-in-btn{
     all: unset;
-    width: 380px;
+    width:100%;
     padding: 16px;
     font-weight: 700;
     font-size: 1em;
@@ -87,13 +92,25 @@
 }
 .register-link{
     margin-top: 19px;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 500;
     letter-spacing: 0.2px;
     color:#59606E;
 }
 .register-link a{
-    font-weight: 700;
+    font-weight: 600;
     color:#477FF1;
     text-decoration: underline;
+}
+@media (max-width: 563px) {
+    .login-container{
+        width: 300px;
+        border: none;
+    }
+    .accounts button span{
+        font-size: 0.9em;
+    }
+    .register-link{
+        font-size: 1em;
+}
 }

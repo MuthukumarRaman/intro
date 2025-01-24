@@ -8,5 +8,5 @@
         {"image":"/assets/svg/facebook.svg","name":"Facebook"},
         {"image":"/assets/svg/apple.svg","name":"Apple"}
     ],
-    "sign-btn":"Sign In Using Password"
+    "sign_btn":"Sign In Using Password"
 }

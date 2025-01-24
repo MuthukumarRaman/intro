@@ -1,0 +1,6 @@
+.dashboard{
+    width: 100%;
+    height: auro;
+    overflow-x: hidden;
+    display: flex;
+}
