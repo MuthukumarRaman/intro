@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 .login-container .login-header{
     display: flex;
@@ -26,7 +27,7 @@
     width: 366px;
     height: 50px;
     margin-top: 24px;
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: 500;
     letter-spacing: 0.2px;
     text-align: center;
@@ -60,7 +61,7 @@
     height: 35px;
 }
 .accounts button span{
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
     text-align: center;
     letter-spacing: 0.2px;
@@ -75,6 +76,7 @@
     width: 380px;
     padding: 16px;
     font-weight: 700;
+    font-size: 1em;
     letter-spacing: 0.2px;
     cursor: pointer;
     border: 1px solid #674DFA;
@@ -85,7 +87,7 @@
 }
 .register-link{
     margin-top: 19px;
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: 500;
     letter-spacing: 0.2px;
     color:#59606E;

@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DataService } from '../../../services/data.service';
 import { Subscription } from 'rxjs';
-import { SharedModule } from '../../../imports'
+import { SharedModule } from '../../../modules/SharedModule.module'
 @Component({
   selector: 'app-login',
   imports:[SharedModule],
