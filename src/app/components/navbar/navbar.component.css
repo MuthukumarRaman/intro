@@ -23,11 +23,10 @@
     flex-direction: column;
 }
 .header-image{
-
     padding: 15px 16px 15px 16px;
 }
 .header-image img{
-    width: 100px;
+    width: 130px;
 }
 .nav-btns button,.bottom-container button{
     width: 100%;

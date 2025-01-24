@@ -4,21 +4,21 @@
         <img src="/assets/svg/logo.svg" alt="">
     </div>
     <div class="nav-btns">
-            <button [class.active-button]="isActive('/home')" (click)="navigateTo('/home')">
-                <img [src]="getImageSrc('/home', 'home')" alt="Home">
+            <button [class.active-button]="isActive('/dashboard')" (click)="navigateTo('/dashboard')">
+                <img [src]="getImageSrc('/dashboard', 'home')" alt="Home">
                 <span>Home</span>
             </button>
-            <button [class.active-button]="isActive('/explore')" (click)="navigateTo('/explore')">
-                <img [src]="getImageSrc('/explore', 'globe')" alt="Explore" >
+            <button [class.active-button]="isActive('/dashboard/explore')" (click)="navigateTo('/dashboard/explore')">
+                <img [src]="getImageSrc('/dashboard/explore', 'globe')" alt="Explore" >
                 <span>Explore</span>
             </button>
 
-            <button [class.active-button]="isActive('/chat')" (click)="navigateTo('/chat')">
-                <img [src]="getImageSrc('/chat', 'chat')" alt="Chat" >
+            <button [class.active-button]="isActive('/dashboard/chat')" (click)="navigateTo('/dashboard/chat')">
+                <img [src]="getImageSrc('/dashboard/chat', 'chat')" alt="Chat" >
                 <span>Chat</span>
             </button>
-            <button [class.active-button]="isActive('/profile')" (click)="navigateTo('/profile')">
-                <img [src]="getImageSrc('/profile', 'user')" alt="Profile" >
+            <button [class.active-button]="isActive('/dashboard/profile')" (click)="navigateTo('/dashboard/profile')">
+                <img [src]="getImageSrc('/dashboard/profile', 'user')" alt="Profile" >
                 <span>Profile</span>
             </button>
     </div>
