@@ -14,6 +14,8 @@ private homeData: any;
 ngOnInit() {
   this.dataService.loadData()
   this.loadData()
+  console.log();
+  
 }
 loadData(){
   this.dataService.data.subscribe((newData) => {
