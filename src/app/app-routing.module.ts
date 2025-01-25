@@ -8,16 +8,16 @@ import { ExploreComponent } from './components/explore/explore.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { ProfileComponent } from './components/profile/profile.component';
 export const routes: Routes = [
-  { path: '', component: LandingPageComponent }, 
-  { path: 'login', component:LoginComponent}, 
+  { path: '', component: LandingPageComponent, title:"Intro"}, 
+  { path: 'login', component:LoginComponent,title: 'Login'}, 
   { 
     path: 'dashboard', 
-    component: DashboardComponent, 
+    component: DashboardComponent, title: 'Dashboard',
     children: [
       { path: '', component: HomeComponent },
-      { path: 'explore', component: ExploreComponent },
-      { path: 'chat', component:  ChatComponent },
-      { path: 'profile', component: ProfileComponent }
+      { path: 'explore', component: ExploreComponent ,title: 'Explore'},
+      { path: 'chat', component:  ChatComponent, title: 'Chat'},
+      { path: 'profile', component: ProfileComponent, title: 'Profile' }
     ]
   }
   
