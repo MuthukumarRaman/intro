@@ -1,11 +1,10 @@
 <div class="navbar">
     <div class="top-container">
-    <div class="header-image">
-        <img src="/assets/svg/logo.svg" alt="">
-    </div>
+        <div class="header-image">
+        </div>
     <div class="nav-btns">
-            <button [class.active-button]="isActive('/dashboard')" (click)="navigateTo('/dashboard')">
-                <img [src]="getImageSrc('/dashboard', 'home')" alt="Home">
+            <button [class.active-button]="isActive('/dashboard/home')" (click)="navigateTo('/dashboard/home')">
+                <img [src]="getImageSrc('/dashboard/home', 'home')" alt="Home">
                 <span>Home</span>
             </button>
             <button [class.active-button]="isActive('/dashboard/explore')" (click)="navigateTo('/dashboard/explore')">
@@ -21,6 +20,14 @@
                 <img [src]="getImageSrc('/dashboard/profile', 'user')" alt="Profile" >
                 <span>Profile</span>
             </button>
+            <!-- <button class="m-view">
+                <i class="fa-solid fa-gear"></i>
+                <span>Setting</span>
+            </button>
+            <button class="m-view">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </button> -->
     </div>
     </div>
     <div class="bottom-container">
@@ -32,6 +39,5 @@
             <i class="fa-solid fa-right-from-bracket"></i>
             <span>Logout</span>
         </button>
-
     </div>
 </div>

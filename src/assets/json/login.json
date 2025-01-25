@@ -1,6 +1,6 @@
 {
     "logo":"/assets/svg/login-logo.svg",
-    "message":"Let’s Get You Started With intro",
+    "message":"Let’s Get You Started With ",
     "accounts":[
         {"image":"/assets/svg/google.svg","name":"Google"},
         {"image":"/assets/svg/linkedin.svg","name":"Linked in"},

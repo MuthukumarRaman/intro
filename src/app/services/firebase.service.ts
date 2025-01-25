@@ -22,7 +22,7 @@ export class FirebaseServices {
         const user = result.user;
         console.log("User Info:", user);
         this.SnackBar.Stackbar("Login Successfully!")
-        this.router.navigate(['/dashboard']); 
+        this.router.navigate(['/dashboard/home']); 
       })
       .catch((error) => {
         console.error("Error during sign-in:", error);

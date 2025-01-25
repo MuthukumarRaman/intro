@@ -4,3 +4,8 @@
     overflow-x: hidden;
     display: flex;
 }
+@media (max-width: 768px) {
+    .dashboard{
+        flex-direction: column-reverse;
+    }
+}

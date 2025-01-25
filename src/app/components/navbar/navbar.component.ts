@@ -25,4 +25,14 @@ export class NavbarComponent {
     console.log(route)
     this.router.navigate([route]);
   }
+
+  getImageSrc_Size(): string {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth <= 1268 
+        ? "/assets/svg/logo_min.svg" 
+        : "/assets/svg/logo.svg";
+    }
+    // Fallback for SSR (Server-Side Rendering)
+    return "/assets/svg/logo.svg";
+  }
 }

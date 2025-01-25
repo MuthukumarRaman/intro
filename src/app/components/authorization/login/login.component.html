@@ -2,7 +2,7 @@
   <div class="login-container">
     <div class="login-header">
         <img [src]="loginData?.logo" alt="Login Logo" />
-        <p>{{ loginData?.message }}</p>
+        <p>{{ loginData?.message }}<span>intro</span></p>
     </div>
     <div class="accounts">
         <button *ngFor="let account of loginData?.accounts" (click)="signin(account.name)">
@@ -14,7 +14,7 @@
     <button class="sign-in-btn">{{loginData?.sign_btn}}</button>
     </div>
     <div class="register-link">
-      New To Intro? <a href="">Register Now</a>
+      New To Intro? <a href="/register">Register Now</a>
     </div>
   </div>
 </div>
