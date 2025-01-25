@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   
   ngOnInit() {
     this.dataService.loadData()
+    
     this.loadData()
   }
   loadData(){
